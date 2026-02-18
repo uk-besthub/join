@@ -7,6 +7,33 @@
   <meta name="description" content="Learn about MindBridge — our mission, vision, and values in making career-focused education accessible for everyone." />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+  /* Background image only for lander.html popup */
+  .modal-backdrop {
+    background-image: url('./'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Optional overlay to make text readable */
+  .modal-backdrop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust darkness as needed */
+    z-index: 1;
+  }
+
+  /* Keep modal content above the overlay */
+  .modal-backdrop .modal {
+    position: relative;
+    z-index: 2;
+  }
+</style>
 </head>
 <body>
   <!-- ===== Nav ===== -->
